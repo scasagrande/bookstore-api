@@ -45,3 +45,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'active_model_serializers', '~> 0.10.9'
+
+gem "octokit", "~> 4.13"
+
+gem "literate_randomizer", "~> 0.4.0"
