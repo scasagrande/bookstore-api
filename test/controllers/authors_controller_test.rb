@@ -12,7 +12,7 @@ class AuthorsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create author" do
     assert_difference('Author.count') do
-      post authors_url, params: { author: { name: @author.name } }, as: :json
+      post authors_url, params: { author: { name: @author.name, biography: @author.biography } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class AuthorsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update author" do
-    patch author_url(@author), params: { author: { name: @author.name } }, as: :json
+    patch author_url(@author), params: { author: { name: @author.name, biography: @author.biography } }, as: :json
     assert_response 200
   end
 

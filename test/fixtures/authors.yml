@@ -2,6 +2,8 @@
 
 one:
   name: MyString
+  biography: My Awesome biography
 
 two:
   name: MyString
+  biography: My Awesome biography
